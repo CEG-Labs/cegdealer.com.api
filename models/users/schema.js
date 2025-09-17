@@ -10,6 +10,7 @@ const users = mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String },
   phone: { type: String },
+  checkins: { type: [Date], default: [] },
   roles: {
     type: [String],
     lowercase: true,
