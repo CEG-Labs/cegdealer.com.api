@@ -6,6 +6,7 @@ require("mongoose-schema-jsonschema")(mongoose);
 const users = mongoose.Schema({
   username: { type: String },
   password: { type: String },
+  pin: { type: String },
   name: { type: String, required: true },
   email: { type: String },
   phone: { type: String },
