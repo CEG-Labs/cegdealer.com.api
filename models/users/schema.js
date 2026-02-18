@@ -36,6 +36,9 @@ const users = mongoose.Schema({
   },
   source: { type: String, default: "Regular" },
 
+  // Registration
+  registrationDate: { type: Date },
+
   // Date restrictions
   endOfClassDate: { type: Date },
   endOfPracticeDate: { type: Date },
