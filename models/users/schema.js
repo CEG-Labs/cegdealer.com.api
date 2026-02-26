@@ -58,6 +58,7 @@ const users = mongoose.Schema({
     lowercase: true,
     enum: ["student", "instructor"],
   },
+  notes: { type: String },
   games: {
     type: [String],
     lowercase: true,
@@ -71,6 +72,7 @@ const users = mongoose.Schema({
       "keno",
       "uth",
       "sic-bo",
+      "sr",
     ],
   },
 });
