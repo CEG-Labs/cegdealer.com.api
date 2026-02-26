@@ -31,9 +31,10 @@ const users = mongoose.Schema({
   // Status and Classification
   status: {
     type: String,
-    enum: ["Current Student", "Suspended", "Graduate", "Other", ""],
+    enum: ["Current Student", "Suspended", "Paused", "Graduate", "Other", ""],
     default: "",
   },
+  statusChangedDate: { type: Date },
   source: { type: String, default: "Regular" },
 
   // Registration
